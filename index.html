@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="RWAJ" />
+    <meta name="keywords" content="RWAJ" />
+    <meta name="author" content="RWAJ" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <title>RWAJ.Stream</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .iframe-container {
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+	<script>
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+	</script>
+</head>
+<body>
+    <div class="iframe-container">
+        <iframe src="https://tinyurl.com/bde5xsu2" id="myIframe" title="RWAJ-EmbyMedia"></iframe>
+    </div>
+	<script>
+        function disableIframeRightClick() {
+            const iframe = document.getElementById('myIframe');
+            iframe.onload = function() {
+                const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+                iframeDocument.addEventListener('contextmenu', function(event) {
+                    event.preventDefault();
+                });
+            };
+        }
+        disableIframeRightClick();
+    </script>
+	</body>
+<!-- Created By RWAJ -->
+</html>

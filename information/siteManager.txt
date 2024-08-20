@@ -1,0 +1,7 @@
+Emby
+http://99.160.199.29:6891
+https://tinyurl.com/bde5xsu2
+
+Jellyfin
+http://99.160.199.29:8096
+https://tinyurl.com/4h9h5x3s
